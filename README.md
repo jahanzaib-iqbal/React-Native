@@ -1,2 +1,2 @@
 # React-Native
-React Native repository 
+React Native repository for my Semester Tasks
