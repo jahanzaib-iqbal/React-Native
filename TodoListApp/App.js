@@ -129,6 +129,6 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     textDecorationStyle: "dotted",
     backgroundColor: "#610C9F",
-    borderRadius: 10,
+    borderRadius: 11,
   },
 });
