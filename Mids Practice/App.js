@@ -7,30 +7,25 @@ import SecondScreen from "./SecondScreen";
 
 export default function App() {
   const Stack = createStackNavigator();
-
+  global.setting = {
+    bg: "black",
+    fc: "white",
+  };
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="FirstScreen"
-          component={FirstScreen}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="SecondScreen"
-          component={SecondScreen}
-          options={{ headerShown: true }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="FirstScreen"
+            component={FirstScreen}
+            options={{ headerShown: true }}
+          />
+          <Stack.Screen
+            name="SecondScreen"
+            component={SecondScreen}
+            options={{ headerShown: true }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
