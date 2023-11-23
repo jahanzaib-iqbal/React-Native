@@ -18,22 +18,6 @@ const Stack = createStackNavigator();
 const App = () => {
   const [universities, setUniversities] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const db = getDatabase(app);
-  //     const universitiesRef = ref(db, 'fastfood');
-
-  //     onValue(universitiesRef, (snapshot) => {
-  //       const data = snapshot.val();
-  //       if (data) {
-  //         const universityArray = Object.values(data);
-  //         setUniversities(universityArray);
-  //       }
-  //     });
-  //   };
-
-  //   fetchData();
-  // }, []);
   const initialize = () => {
     const db = getDatabase(app);
 
@@ -84,10 +68,7 @@ const App = () => {
       },
     ]);
 
-    // var index = 3;
-    // var refData = "mobeen/" + index;
-    // const dbRefForUpdate = ref(db, refData);
-    // update(dbRefForUpdate, { price: 2200, title: "Check 1", key: 43 });
+
   };
 
   const showPrice = () => {
@@ -137,13 +118,7 @@ const App = () => {
       </TouchableOpacity>
     </View>
 
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName="AuthLoading">
-    //     <Stack.Screen name="AuthLoading" component={AuthLoadingScreen} options={{ headerShown: false }} />
-    //     <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }} />
-    //     <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
+
   );
 };
 const styles = StyleSheet.create({
