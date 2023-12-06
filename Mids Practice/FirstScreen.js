@@ -11,7 +11,7 @@ const FirstScreen = () => {
   
 
   useEffect(() => {
-    // console.log("Count Mounted");
+    console.log("Count Mounted");
     console.log(" AT startup bg : ", bg, "fc : ", fc);
 
   }, [count]);
